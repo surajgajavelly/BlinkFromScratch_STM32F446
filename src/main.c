@@ -22,11 +22,11 @@ int main(void)
         // LED ON (PA5 High)
         GPIOA_ODR |= (1 << 5);
         
-        for(volatile int i = 0; i < 5000000; i++); 
+        for(volatile int i = 0; i < 1000000; i++); 
 
         // LED OFF (PA5 Low)
         GPIOA_ODR &= ~(1 << 5);
 
-        for(volatile int i = 0; i < 5000000; i++);
+        for(volatile int i = 0; i < 1000000; i++);
     }
 }
